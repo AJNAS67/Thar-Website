@@ -1,3 +1,20 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.selector-for-some-widget {
+  box-sizing: content-box;
+}
+
 .box {
   height: 30px;
   background-color: aqua;
@@ -467,4 +484,77 @@
   .content-L-2 {
     display: none;
   }
+}
+.section-7-R-content {
+  display: flex;
+  text-align: center;
+  position: absolute;
+  bottom: 20px;
+  color: white;
+  bottom: 70px;
+  justify-content: center;
+  width: 50%;
+}
+
+.section-7-L-content {
+  display: flex;
+  text-align: center;
+  position: absolute;
+  bottom: 20px;
+  color: #e0e0e0;
+  bottom: 70px;
+  justify-content: center;
+  width: 50%;
+}
+
+.section-7-T-content {
+  position: absolute;
+  top: 40px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.section-7-B-content {
+  position: absolute;
+  bottom: 72px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.footer hr.solid {
+  border-top: 5px solid #ce0e2d;
+}
+.footer h3 {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0 0 25px;
+  color: #313131 !important;
+  font-family: "Source Sans Pro", sans-serif !important;
+}
+.footer .footer-icon {
+  display: flex;
+  gap: 20px;
+}
+.footer .footer-icon a {
+  text-decoration: none;
+  color: #313131;
+}
+.footer .download-app a {
+  font-size: 18px;
+  font-weight: bold;
+  color: #313131;
+  text-decoration: none;
+  font-family: "Source Sans Pro", sans-serif !important;
+}
+.footer .footer-a {
+  color: #313131;
+  font-size: 14px;
+  font-family: "Source Sans Pro", sans-serif !important;
+  text-decoration: none;
+  padding: 0;
+  margin-left: 0;
 }/*# sourceMappingURL=style.css.map */
