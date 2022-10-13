@@ -485,6 +485,18 @@ li {
     display: none;
   }
 }
+.section_6-5 .btn-div {
+  text-align: center;
+}
+.section_6-5 button {
+  text-align: center;
+  border: 1.5px solid #313131 !important;
+  color: #313131 !important;
+  font-weight: 700px;
+  padding: 8px 20px 9px;
+  font-size: 16px;
+}
+
 .section-7-R-content {
   display: flex;
   text-align: center;
@@ -523,6 +535,14 @@ li {
   justify-content: center;
   text-align: center;
   color: white;
+}
+
+.section_8 .gallery {
+  text-align: center;
+}
+.section_8 .container .row .img-div {
+  margin: 0;
+  padding: 2px;
 }
 
 .footer hr.solid {

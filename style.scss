@@ -605,6 +605,25 @@ li {
   }
 }
 
+// section-6.5 start
+
+.section_6-5 {
+  .btn-div{
+    text-align: center;
+  }
+  // text-align: center;
+  button {
+    text-align: center;
+    border: 1.5px solid #313131 !important;
+    color: #313131 !important;
+    font-weight: 700px;
+    padding: 8px 20px 9px;
+    font-size: 16px;
+  }
+}
+// section 6.5 end  
+
+
 // section-7 Start
 
 .section-7-R-content {
@@ -629,8 +648,7 @@ li {
   width: 50%;
 }
 
-
-.section-7-T-content{
+.section-7-T-content {
   position: absolute;
   top: 40px;
   display: flex;
@@ -639,8 +657,7 @@ li {
   color: white;
 }
 
-
-.section-7-B-content{
+.section-7-B-content {
   position: absolute;
   bottom: 72px;
   display: flex;
@@ -649,17 +666,23 @@ li {
   color: white;
 }
 
-
-
-// Medium devices (tablets, 768px and up)
-
-
-
-
-
-
-
 // section-7 End
+
+// section-8 start
+
+.section_8 {
+  .gallery {
+    text-align: center;
+  }
+  .container .row {
+    .img-div {
+      // padding: 0;
+      margin: 0;
+      padding: 2px;
+    }
+  }
+}
+// section-8 End
 
 // footer start
 

@@ -21,6 +21,7 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
     />
     <!-- bootstrap icon -->
+    <script src="script.js"></script>
   </head>
   <body>
     <!-- header-section-start -->
@@ -66,10 +67,18 @@
               <div style="color: white">
                 <ul class="navbar-nav">
                   <li class="nav-item">
-                    <a class="nav-link" href="https://auto.mahindra.com/test-drive">Test Drive</a>
+                    <a
+                      class="nav-link"
+                      href="https://auto.mahindra.com/test-drive"
+                      >Test Drive</a
+                    >
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="https://auto.mahindra.com/dealer-locator">Locate Us</a>
+                    <a
+                      class="nav-link"
+                      href="https://auto.mahindra.com/dealer-locator"
+                      >Locate Us</a
+                    >
                   </li>
                 </ul>
               </div>
@@ -387,6 +396,63 @@
     </div>
 
     <!-- section-6 End -->
+    <!-- section-6.5 start -->
+
+    <div class="container section_6-5 pt-4 pb-4">
+      <div class="btn-div">
+        <button type="button" class="btn btn-outline-secondary mb-4">
+          View all Features
+        </button>
+      </div>
+      <div class="row">
+        <div id="left-div" class="col-md-6">
+          <div
+            class="d-flex flex-row bd-highlight justify-content-center p-3"
+            onclick="chanageLeftColor()"
+          >
+            <div class="p-2 bd-highlight">
+              <img
+                id="jeep"
+                src="./assets/images/Explore Thar Icon-red.png"
+                alt=""
+              />
+            </div>
+            <div class="p-2 bd-highlight">
+              <span>Check out the features & specs of the </span>
+              <br />
+              <span>All-New Thar</span>
+              <br />
+              <button type="button" class="btn btn-outline-light">
+                Download Brochure
+              </button>
+            </div>
+          </div>
+        </div>
+        <div id="right-div" class="col-md-6">
+          <div
+            class="d-flex flex-row bd-highlight justify-content-center p-3"
+            onclick="chanageRighttColor()"
+          >
+            <div class="p-2 bd-highlight">
+              <img
+                id="accessories"
+                src="./assets/images/accessories-red.png"
+                alt=""
+              />
+            </div>
+            <div class="p-2 bd-highlight">
+              <span> Add a little extra to your favorite </span>
+              <br /><span>Mahindra SUV</span>
+              <br />
+              <button id="right-btn" type="button" class="btn btn-outline-light">
+                Accessories Brochure
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- section-6.5 end -->
 
     <!-- section-7-start -->
 
@@ -458,6 +524,58 @@
     </div>
 
     <!-- section-7-End -->
+
+    <!-- section 8 start  -->
+    <div class="section_8 pt-5 pb-3">
+      <h1 class="gallery">Gallery</h1>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6" style="padding: 0">
+            <iframe
+              style="width: 100%; object-fit: cover; height: 100%"
+              src="https://www.youtube.com/embed/GgoLNdhwez0"
+              frameborder="0"
+            ></iframe>
+          </div>
+          <div class="col md-6">
+            <div class="row">
+              <div class="col-md-6 img-div">
+                <img
+                  class="w-100 img-fluid"
+                  src="./assets/images/Thar Automatic Transmission.webp"
+                  alt=""
+                />
+              </div>
+              <div class="col-md-6 img-div">
+                <img
+                  class="w-100 img-fluid"
+                  src="./assets/images/Thar interior roof with speakers.webp"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 img-div">
+                <img
+                  class="w-100 img-fluid"
+                  src="./assets/images/mahindra-thar-seats-interior-top-view.webp"
+                  alt=""
+                />
+              </div>
+              <div class="col-md-6 img-div">
+                <img
+                  class="w-100 img-fluid"
+                  src="./assets/images/Gallery_03_1920x1080.webp"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- section 8 end -->
 
     <!-- footer Start -->
     <div class="container footer" style="margin-top: 40px">
@@ -552,6 +670,7 @@
         </div>
       </div>
     </div>
+    <button id="btn">Button</button>
 
     <!-- footer End -->
     <!-- js -->
@@ -565,6 +684,31 @@
       integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
       crossorigin="anonymous"
     ></script>
+    <script>
+      function chanageLeftColor() {
+        document.getElementById("left-div").style.backgroundColor = "#CE0E2D";
+        document.getElementById("left-div").style.color = "white";
+        document.getElementById("jeep").src =
+          "./assets/images/Explore Thar Icon-white.webp";
+
+        document.getElementById("right-div").style.backgroundColor = "white";
+        document.getElementById("right-div").style.color = "black";
+        document.getElementById("accessories").src =
+          "./assets/images/accessories-red.png";
+      }
+      function chanageRighttColor() {
+        document.getElementById("right-div").style.backgroundColor = "#CE0E2D";
+        document.getElementById("right-div").style.color = "white";
+        document.getElementById("accessories").src =
+          "./assets/images/accessories-white.webp";
+          document.getElementById('right-btn').style.color="white"
+
+        document.getElementById("left-div").style.backgroundColor = "white";
+        document.getElementById("left-div").style.color = "black";
+        document.getElementById("jeep").src =
+          "./assets/images/Explore Thar Icon-red.png ";
+      }
+    </script>
 
     <!-- js -->
   </body>
